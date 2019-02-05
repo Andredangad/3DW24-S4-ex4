@@ -16,7 +16,7 @@ export class RechercheComponent implements OnInit {
 showDetails(jeu) {
     if(jeu && jeu.id)
     {
-      this.router.navigate(['/jeu', jeu.id]);
+      this.router.navigate(['/game-detail', jeu.id]);
     }
 }
 }
