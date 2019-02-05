@@ -16,6 +16,7 @@ import { TagComponent } from './tag/tag.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { GameDetailComponent } from './game-detail/game-detail.component';
 import { AppRoutingModule } from './app-routing.module';
+import { RechercheComponent } from './recherche/recherche.component';
 
 
 
@@ -29,6 +30,7 @@ import { AppRoutingModule } from './app-routing.module';
     JeuComponent,
     TagComponent,
     GameDetailComponent,
+    RechercheComponent,
 
 	
 

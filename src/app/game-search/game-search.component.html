@@ -1,14 +1,10 @@
 <div class ="search-box">
-     
-      <input #searchBox id="search-box" (input)="search(searchBox.value)" placeholder="Recherche" />
+     <form (keydown.enter)="$event.preventDefault()">
+      <input #searchBox id="search-box" (keyup)="search(searchBox.value)" placeholder="Recherche" />
 	    <ul class="search-result">
-    <li *ngFor="let jeu of jeux$ | async" >
-      <a routerLink="/detail/{{jeu.id}}">
-        {{jeu.name}}
-      </a>
-    </li>
-  </ul>
 
+  </ul>
+</form>
 	 <!-- <a class="rech-button" href="#">
 	 <img src="https://pngimage.net/wp-content/uploads/2018/06/search.png-7.png"> 
 	 </a>-->

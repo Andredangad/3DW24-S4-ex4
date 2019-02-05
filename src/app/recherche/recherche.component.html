@@ -1,0 +1,6 @@
+<li *ngFor="let jeu of jeuService.jeux | async"
+(click)="showDetails(jeu)">
+<h3> {{jeu.name}}</h3>
+<p> {{jeu.desc}} </p>
+
+</li>
